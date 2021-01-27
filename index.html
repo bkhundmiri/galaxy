@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -14,50 +15,71 @@
 
     </header>
     <main>
-        <div class="banner">
-            <h1>Galaxy</h1>
-            <p class="bannerInfo">An interactive look at the worlds beyond.</p>
+        <div id="banner">
+            <video loop muted autoplay preload="auto">
+                <source src="./Assets/images/bannerBackground3.mp4" type="video/mp4">
+            </video>
+            <div class="bannerCaption">
+                <h1>Galaxy</h1>
+                <p>An Interactive Look at Worlds Beyond</p>
+            </div>
         </div>
-        <div class="navContainer">
 
-        </div>
         <div class="aboutMe">
             <p>Using NASA's Exoplanets API to provide a informative understanding of planets beyond the scope of our 
                 immediate galaxy. <br>
                 We incorporate information from NASA's KEPLER project.</p>
-            
-        </div>
-        <div class="contentContainer">
-            <div class="filterBox">
+            <div class="showDataButton">
                 <button class="showData">Show</button>
             </div>
-            <div class="dataBox">
-                <table  id="dataTable" style="width: 100%;">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Given Name</th>
-                            <th>Orbital Period</th>
-                            <th>Equilibrium Temp</th>
-                            <th>Earth Flux</th>
-                            <th>Planet Radius</th>
-                            <th>Temp of Host</th>
-                            <th>Planet Confirmation</th>
-                            <th>KEPLER Confirmation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+        </div>
 
-                    </tbody>
-                    <tfoot>
+        <!-- <div class="bgimg1">
+            <video loop muted autoplay  preload="auto">
+                <source src="./Assets/images/background2.mp4" type="video/mp4">
+            </video>
+        </div> -->
 
-                    </tfoot>
-                </table>
-            </div>
+        <div class="filterFeatures">
+
+        </div>
+
+        <!-- <div class="bgimg2">
+            <video loop muted autoplay preload="auto">
+                <source src="./Assets/images/background1.mp4" type="video/mp4">
+            </video>
+        </div> -->
+       
+        <div class="dataBox">
+            <table  id="dataTable" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th class="kepoi_name">ID</th>
+                        <th class="givName">Given Name</th>
+                        <th>Orbital Period<br><span class="tableDesc">(days)</span></th>
+                        <th>Equilibrium Temp<br><span class="tableDesc">(K)</span></th>
+                        <th>Earth Flux<br><span class="tableDesc">(Earth temp)</span></th>
+                        <th>Planet Radius<br><span class="tableDesc">(Earth radii)</span></th>
+                        <th>Temp of Host<br><span class="tableDesc">(K)</span></th>
+                        <th>NASA Confirmation</th>
+                        <th>KEPLER Confirmation</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+
+        <div>
+
         </div>
     </main>
     <footer>
-
+        footer
     </footer>
 </body>
 </html>

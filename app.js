@@ -6,12 +6,11 @@ const getPlanets = async () => {
         let data = res.data
         // let planetData = data.slice(1, 101)
         console.log(data);
-        showPlanetData(data)
+        // showPlanetData(data)
     } catch (err) {
         console.log(err);
     }
 }
-// getPlanets()
 
 
 // Event Listner for the data
@@ -19,6 +18,7 @@ const getPlanets = async () => {
 
 const showDataButton = document.querySelector('.showData')
 showDataButton.addEventListener('click', getPlanets)
+
 
 // Append data to the content container
 
@@ -42,3 +42,10 @@ const showPlanetData = (planetData) => {
         dataContainer.insertAdjacentHTML('beforeend', planetInfo)
     });
 }
+
+
+
+// Event Listeners for the Table
+
+
+// const kepId = document.querySelector('')

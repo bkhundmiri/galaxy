@@ -1,6 +1,76 @@
+
+/* BANNER */
+
+
+#banner {
+    height: 100vh;
+    width: 100%;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit: cover;
+}
+
+#banner .bannerCaption {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: #DAC0AD;
+}
+
+.bannerCaption h1 {
+    font-size: 60px;
+}
+
+.bannerCaption p {
+    font-size: 30px;
+}
+
+#banner::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* ABOUT ME */
+
+
+.aboutMe {
+    color: #1D1F2C;
+    background-color: #726478;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    margin-top: -14px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+}
+
+
+/* DATA TABLE */
+
+
 .dataBox {
     overflow-y: auto;
-    height: 300px;
+    height: 500px;
 }
 
 .databox thead th {
@@ -16,8 +86,26 @@ table {
 th, td {
     padding: 8px 16px;
     border: 1px solid #ccc;
+    
 }
 
 th {
-    background: #eee;
+    background: #1D1F2C;
+    color: white;
+}
+
+td {
+    background-color: #A997BA;
+}
+
+.tableDesc {
+    font-size: 15px;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    padding: 50px;
 }
