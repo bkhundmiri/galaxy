@@ -29,49 +29,40 @@
             <p>Using NASA's Exoplanets API to provide a informative understanding of planets beyond the scope of our 
                 immediate galaxy. <br>
                 We incorporate information from NASA's KEPLER project.</p>
-            <div class="showDataButton">
-                <button class="showData">Show</button>
-            </div>
         </div>
 
-        <!-- <div class="bgimg1">
-            <video loop muted autoplay  preload="auto">
-                <source src="./Assets/images/background2.mp4" type="video/mp4">
-            </video>
-        </div> -->
+        
 
         <div class="filterFeatures">
-
+            <input type="text" id="tableSearch" onkeyup="searchPlanets()" placeholder="Search">
         </div>
 
-        <!-- <div class="bgimg2">
-            <video loop muted autoplay preload="auto">
-                <source src="./Assets/images/background1.mp4" type="video/mp4">
-            </video>
-        </div> -->
+
        
         <div class="dataBox">
-            <table  id="dataTable" style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th class="kepoi_name">ID</th>
-                        <th class="givName">Given Name</th>
-                        <th>Orbital Period<br><span class="tableDesc">(days)</span></th>
-                        <th>Equilibrium Temp<br><span class="tableDesc">(K)</span></th>
-                        <th>Earth Flux<br><span class="tableDesc">(Earth temp)</span></th>
-                        <th>Planet Radius<br><span class="tableDesc">(Earth radii)</span></th>
-                        <th>Temp of Host<br><span class="tableDesc">(K)</span></th>
-                        <th>NASA Confirmation</th>
-                        <th>KEPLER Confirmation</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-                <tfoot>
-
-                </tfoot>
-            </table>
+            <div class="tableBox">
+                <table  id="dataTable" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th class="kepoi_name">ID</th>
+                            <th class="givName">Given Name</th>
+                            <th>Orbital Period<br><span class="tableDesc">(days)</span></th>
+                            <th>Equilibrium Temp<br><span class="tableDesc">(K)</span></th>
+                            <th>Earth Flux<br><span class="tableDesc">(Earth temp)</span></th>
+                            <th>Planet Radius<br><span class="tableDesc">(Earth radii)</span></th>
+                            <th>Temp of Host<br><span class="tableDesc">(K)</span></th>
+                            <th>NASA Confirmation</th>
+                            <th>KEPLER Confirmation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                    <tfoot>
+    
+                    </tfoot>
+                </table>
+            </div>
         </div>
 
         <div>

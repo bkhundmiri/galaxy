@@ -65,19 +65,48 @@
 }
 
 
+/* FILTER CONTIANER */
+
+
+.filterFeatures {
+    background-color: #1D1F2C;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#tableSearch {
+    width: 20%;
+    font-size: 20px; 
+    padding: 8px 10px 8px 20px; 
+    border: 2px solid #A997BA; 
+    margin: 12px 12px 12px 0; 
+}
+
+
 /* DATA TABLE */
 
 
+
 .dataBox {
-    overflow-y: auto;
-    height: 500px;
+    overflow-y: scroll;
+    background-color: #BE9E87;
+    /* height: 100vh; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    
 }
 
-.databox thead th {
+.databox thead, th {
     position: sticky;
     top: 0;
 }
 
+.tableBox {
+    height: 90vh;
+    width: 100%;
+    background-color: #1D1F2C;
+}
 table {
     border-collapse: collapse;
     width: 100%;

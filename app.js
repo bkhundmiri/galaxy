@@ -5,19 +5,19 @@ const getPlanets = async () => {
         const res = await axios.get(url)
         let data = res.data
         // let planetData = data.slice(1, 101)
-        console.log(data);
-        // showPlanetData(data)
+        // console.log(data);
+        showPlanetData(data)
     } catch (err) {
         console.log(err);
     }
 }
-
+getPlanets()
 
 // Event Listner for the data
 
 
-const showDataButton = document.querySelector('.showData')
-showDataButton.addEventListener('click', getPlanets)
+// const showDataButton = document.querySelector('.showData')
+// showDataButton.addEventListener('click', getPlanets)
 
 
 // Append data to the content container
@@ -48,4 +48,27 @@ const showPlanetData = (planetData) => {
 // Event Listeners for the Table
 
 
-// const kepId = document.querySelector('')
+
+
+
+// Search Feature
+
+
+function searchPlanets () {
+    let input = document.querySelector('#tableSearch')
+    let filter = input.value.toUpperCase()
+    let table = document.querySelector('#dataTable')
+    tr = table.getElementsByTagName('tr')
+
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName('td')[1]
+        if(td) {
+            txtVal = td.textContent || td.innerText
+            if (txtVal.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = ''
+            } else {
+                tr[i].style.display = 'none'
+            }
+        }   
+    }
+}
