@@ -25,7 +25,7 @@
     position: relative;
     z-index: 10;
     text-align: center;
-    color: #DAC0AD;
+    color: white;
 }
 
 .bannerCaption h1 {
@@ -52,8 +52,9 @@
 
 
 .aboutMe {
+    height: 25vh;
     color: #1D1F2C;
-    background-color: #726478;
+    background-color: #554A59;
     text-align: center;
     padding: 50px 80px;
     text-align: justify;
@@ -71,15 +72,33 @@
 .filterFeatures {
     background-color: #1D1F2C;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 #tableSearch {
+    background-color: #B5B8CF;
+    color: #1D1F2C;
     width: 20%;
     font-size: 20px; 
     padding: 8px 10px 8px 20px; 
     border: 2px solid #A997BA; 
     margin: 12px 12px 12px 0; 
+}
+
+.filterButtons {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 10px;
+}
+
+.filterHabitable, .filterEarth, .filterReset {
+    background-color: #B5B8CF;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 10px 0 10px;
+    border: #1D1F2C 5px solid;
+    border-radius: 15px;
 }
 
 
@@ -131,10 +150,23 @@ td {
     font-size: 15px;
 }
 
+tfoot {
+    background-color: #1D1F2C;
+    height: 3vh;
+}
+
+th:hover {
+    background-color: #726478;
+    cursor: pointer;
+}
+
+
 
 /* FOOTER */
 
 
 footer {
-    padding: 50px;
+    background-color: #1D1F2C;
+    color: white;
+    padding: 7px;
 }

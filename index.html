@@ -15,6 +15,7 @@
 
     </header>
     <main>
+
         <div id="banner">
             <video loop muted autoplay preload="auto">
                 <source src="./Assets/images/bannerBackground3.mp4" type="video/mp4">
@@ -26,14 +27,19 @@
         </div>
 
         <div class="aboutMe">
-            <p>Using NASA's Exoplanets API to provide a informative understanding of planets beyond the scope of our 
-                immediate galaxy. <br>
+            <p>Using NASA's Exoplanets API to provide an informative understanding of planets beyond the scope of our 
+                immediate solar system. <br>
                 We incorporate information from NASA's KEPLER project.</p>
         </div>
 
         
 
         <div class="filterFeatures">
+            <div class="filterButtons">
+                <p class="filterEarth">Filter by 'Most Similar to Earth'</p>
+                <p class="filterHabitable">Filter by "In Habitable Zone"</p>
+                <p class="filterReset">Reset Filter</p>
+            </div>
             <input type="text" id="tableSearch" onkeyup="searchPlanets()" placeholder="Search">
         </div>
 
@@ -44,15 +50,15 @@
                 <table  id="dataTable" style="width: 100%;">
                     <thead>
                         <tr>
-                            <th class="kepoi_name">ID</th>
-                            <th class="givName">Given Name</th>
-                            <th>Orbital Period<br><span class="tableDesc">(days)</span></th>
-                            <th>Equilibrium Temp<br><span class="tableDesc">(K)</span></th>
-                            <th>Earth Flux<br><span class="tableDesc">(Earth temp)</span></th>
-                            <th>Planet Radius<br><span class="tableDesc">(Earth radii)</span></th>
-                            <th>Temp of Host<br><span class="tableDesc">(K)</span></th>
-                            <th>NASA Confirmation</th>
-                            <th>KEPLER Confirmation</th>
+                            <th class="criteria kepoi_name">ID</th>
+                            <th class="criteria kepler_name">Given Name</th>
+                            <th class="criteria koi_period">Orbital Period<br><span class="tableDesc">(days)</span></th>
+                            <th class="criteria koi_teq">Equilibrium Temp<br><span class="tableDesc">(K)</span></th>
+                            <th class="criteria koi_insol">Earth Flux<br><span class="tableDesc">(Earth temp)</span></th>
+                            <th class="criteria koi_prad">Planet Radius<br><span class="tableDesc">(Earth radii)</span></th>
+                            <th class="criteria koi_steff">Temp of Host<br><span class="tableDesc">(K)</span></th>
+                            <th class="criteria confirmation">NASA Confirmation</th>
+                            <th class="criteria confirmation">KEPLER Confirmation</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,12 +71,10 @@
             </div>
         </div>
 
-        <div>
-
-        </div>
     </main>
     <footer>
-        footer
+        <p>All information provided is courtesy of ®NASA and the Exoplanets API</p>
+        <span class="copyright">© GALAXY 2021</span>
     </footer>
 </body>
 </html>

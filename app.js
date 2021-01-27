@@ -1,23 +1,83 @@
+
+
+// Display Data Call 1
+
+
 const url = "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?&table=cumulative&format=json&select=kepoi_name,kepler_name,koi_disposition,koi_pdisposition,koi_period,koi_prad,koi_teq,koi_insol,koi_steff"
 
 const getPlanets = async () => {
     try {
         const res = await axios.get(url)
         let data = res.data
-        // let planetData = data.slice(1, 101)
-        // console.log(data);
+        removeData()
         showPlanetData(data)
     } catch (err) {
         console.log(err);
     }
 }
+
+
+// Display Data Call 2
+
+
+const earthFilterUrl = "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=cumulative&format=json&where=koi_prad>0.6 and koi_prad<1.5 and koi_teq>180 and koi_teq<303 and koi_disposition like 'CANDIDATE'&select=kepoi_name,kepler_name,koi_disposition,koi_pdisposition,koi_period,koi_prad,koi_teq,koi_insol,koi_steff"
+
+const getEarthFilterPlanets = async () => {
+    removeData()
+    try {
+        const earthFilterRes = await axios.get(earthFilterUrl)
+        let earthFilterData = earthFilterRes.data
+        // console.log(earthFilterData);
+        showPlanetData(earthFilterData)
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+
+// Display Data Call 3 
+
+
+const habitableFilterUrl = "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=cumulative&format=json&where=koi_teq>180 and koi_teq<303 and koi_insol>0.25 and koi_insol<2.2 and koi_pdisposition like 'CANDIDATE'&select=kepoi_name,kepler_name,koi_disposition,koi_pdisposition,koi_period,koi_prad,koi_teq,koi_insol,koi_steff"
+
+const getHabitableFilterPlanets = async () => {
+    removeData()
+    try {
+        const habitableFilterRes = await axios.get(habitableFilterUrl)
+        let habitableFilterData = habitableFilterRes.data
+        // console.log(earthFilterData);
+        showPlanetData(habitableFilterData)
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+
 getPlanets()
 
-// Event Listner for the data
+
+// Remove Data 
 
 
-// const showDataButton = document.querySelector('.showData')
-// showDataButton.addEventListener('click', getPlanets)
+const removeData = () => {
+    const rmPlanets = document.querySelector('tbody')
+    while (rmPlanets.lastChild) {
+        rmPlanets.removeChild(rmPlanets.lastChild)
+    }
+}
+
+
+// Filter Listeners for Data
+
+
+const resetFilterData = document.querySelector('.filterReset')
+resetFilterData.addEventListener('click', getPlanets)
+
+const earthFilterData = document.querySelector('.filterEarth')
+earthFilterData.addEventListener('click', getEarthFilterPlanets)
+
+const habitableFilterData = document.querySelector('.filterHabitable')
+habitableFilterData.addEventListener('click', getHabitableFilterPlanets)
 
 
 // Append data to the content container
@@ -44,14 +104,7 @@ const showPlanetData = (planetData) => {
 }
 
 
-
-// Event Listeners for the Table
-
-
-
-
-
-// Search Feature
+// Search Feature Functions
 
 
 function searchPlanets () {
@@ -70,5 +123,5 @@ function searchPlanets () {
                 tr[i].style.display = 'none'
             }
         }   
-    }
+    } 
 }
