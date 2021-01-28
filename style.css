@@ -29,11 +29,15 @@
 }
 
 .bannerCaption h1 {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
 }
 
 .bannerCaption p {
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Crimson Text', serif;
+
 }
 
 #banner::after {
@@ -61,10 +65,25 @@
     margin-top: -14px;
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
+    justify-content: center;
     align-items: center;
 }
 
+.aboutMe h2, p {
+    color: white;
+}
+
+.aboutMe h2 {
+    font-size: 40px;
+    font-family: 'Syne', sans-serif;
+
+}
+
+.aboutMe p {
+    font-size: 25px;
+    font-family: 'Bitter', serif;
+    margin: 0 200px 0 200px;
+}
 
 /* FILTER CONTIANER */
 
@@ -91,7 +110,12 @@
     margin-left: 10px;
 }
 
-.filterHabitable, .filterEarth, .filterReset {
+.filterButtons p {
+    color: #1D1F2C;
+
+}
+
+.filter {
     background-color: #B5B8CF;
     display: flex;
     align-items: center;
@@ -101,6 +125,11 @@
     border-radius: 15px;
 }
 
+.filter:hover {
+    background-color: #726478;
+    color: #B5B8CF;
+    cursor: pointer;
+}
 
 /* DATA TABLE */
 
@@ -109,8 +138,6 @@
 .dataBox {
     overflow-y: scroll;
     background-color: #BE9E87;
-    /* height: 100vh; */
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     
@@ -126,6 +153,7 @@
     width: 100%;
     background-color: #1D1F2C;
 }
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -157,9 +185,7 @@ tfoot {
 
 th:hover {
     background-color: #726478;
-    cursor: pointer;
 }
-
 
 
 /* FOOTER */
@@ -169,4 +195,170 @@ footer {
     background-color: #1D1F2C;
     color: white;
     padding: 7px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media all and (max-width: 1500px) {
+    .bannerCaption h1 {
+        font-size: 65px;
+    }
+
+    .bannerCaption p {
+        font-size: 40px;
+    }
+
+    .aboutMe {
+        padding: 20px 30px;
+    }
+
+    .aboutMe h2 {
+        font-size: 28px;
+    }
+
+    .aboutMe p {
+        font-size: 20px;
+        margin: 0 25px 0 25px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .bannerCaption h1 {
+        font-size: 65px;
+    }
+
+    .bannerCaption p {
+        font-size: 40px;
+    }
+
+    .aboutMe {
+        padding: 20px 30px;
+    }
+
+    .aboutMe h2 {
+        font-size: 23px;
+    }
+    .aboutMe p {
+        font-size: 18px;
+        margin: 0 25px 0 25px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .bannerCaption h1 {
+        font-size: 50px;
+    }
+
+    .bannerCaption p {
+        font-size: 25px;
+    }
+
+    .aboutMe {
+        padding: 10px 20px;
+    }
+
+    .aboutMe h2 {
+        font-size: 20px;
+    }
+
+    .aboutMe p {
+        font-size: 15px;
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .bannerCaption h1 {
+        font-size: 50px;
+    }
+
+    .bannerCaption p {
+        font-size: 25px;
+    }
+
+    .aboutMe {
+        padding: 7px 15px;
+    }
+
+    .aboutMe h2 {
+        font-size: 15px;
+    }
+
+    .aboutMe p {
+        font-size: 10px;
+        margin: 0 15px 0 15px;
+    }
+
+    #tableSearch {
+        font-size: 17px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .bannerCaption h1 {
+        font-size: 50px;
+    }
+
+    .bannerCaption p {
+        font-size: 25px;
+    }
+
+    .aboutMe {
+        padding: 5px 10px;
+    }
+
+    .aboutMe h2 {
+        font-size: 13px;
+        margin: 10px;
+    }
+
+    .aboutMe p {
+        font-size: 10px;
+        margin: 0 10px 0 10px;
+    }
+
+    .filterButtons p {
+        font-size: 13px;
+    }
+
+    #tableSearch {
+        font-size: 13px;
+        padding: 0 50px 0 5px;
+        align-self: flex-end;
+    }
+
+    th {
+        font-size: 13px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .bannerCaption h1 {
+        font-size: 35px;
+    }
+
+    .bannerCaption p{
+        font-size: 20px;
+    }
+    
+    .aboutMe h2{
+        font-size: 12px;
+    }
+
+    .aboutMe p {
+        font-size: 9px;
+    }
+
+    .filterButtons p {
+        font-size: 10px;
+    }
 }

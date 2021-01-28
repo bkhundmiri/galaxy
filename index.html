@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="./app.js"></script>
-    <title>Galaxy | A Perspective</title>
+    <title>Galaxy | A Kepler Perspective</title>
 </head>
 <body>
     <header>
@@ -21,24 +30,23 @@
                 <source src="./Assets/images/bannerBackground3.mp4" type="video/mp4">
             </video>
             <div class="bannerCaption">
-                <h1>Galaxy</h1>
+                <h1>GALAXY</h1>
                 <p>An Interactive Look at Worlds Beyond</p>
             </div>
         </div>
 
         <div class="aboutMe">
-            <p>Using NASA's Exoplanets API to provide an informative understanding of planets beyond the scope of our 
-                immediate solar system. <br>
-                We incorporate information from NASA's KEPLER project.</p>
+            <h2>Ever wondered what's beyond the scope of our immediate solar system?</h2>
+            <p>This site incorporates information from NASA's KEPLER project to provide you an informative look on all planetary objects confirmed by the Kepler Sattelite throughout its career. Kepler, initially released into orbit to search for Earth-like planets living within the habitable zone of other Sun-like stars, found an approximate of 2,394 confirmed planets, with another 2,366 candidates yet to be confirmed. Below lies a list of roughly 9,000 Kepler Object(s) of Interest (KOI) discovered and tracked to date.</p>
         </div>
 
         
 
         <div class="filterFeatures">
             <div class="filterButtons">
-                <p class="filterEarth">Filter by 'Most Similar to Earth'</p>
-                <p class="filterHabitable">Filter by "In Habitable Zone"</p>
-                <p class="filterReset">Reset Filter</p>
+                <p class="filter earth">Filter by 'Most Similar to Earth'</p>
+                <p class="filter habitable">Filter by "In Habitable Zone"</p>
+                <p class="filter reset">Reset Filter</p>
             </div>
             <input type="text" id="tableSearch" onkeyup="searchPlanets()" placeholder="Search">
         </div>
@@ -64,17 +72,16 @@
                     <tbody>
     
                     </tbody>
-                    <tfoot>
-    
-                    </tfoot>
                 </table>
             </div>
         </div>
 
     </main>
     <footer>
-        <p>All information provided is courtesy of ®NASA and the Exoplanets API</p>
-        <span class="copyright">© GALAXY 2021</span>
+        <div class="farewell">
+            <p>All information provided is courtesy of ®NASA and the Exoplanets API</p>
+            <span class="copyright">© GALAXY 2021</span>
+        </div>
     </footer>
 </body>
 </html>
