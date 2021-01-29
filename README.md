@@ -72,7 +72,7 @@ Estimated and actual time spent developing and finalizing Galaxy
 
 Below is an example of functional code using JavaScript
 
-
+![Wireframe](/Assets/exampleCode.png) 
 
 ## Change Log
 -
