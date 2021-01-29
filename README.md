@@ -54,18 +54,18 @@ Estimated and actual time spent developing and finalizing Galaxy
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML Skeleton | H | 3hrs| - | - |
-| Incorporating Exoplanet API | H | 4hrs| - | - |
-| Simplifying and Limiting Data  | H | 4hrs| - | - |
-| Button Interaction | M | 3hrs| - | - |
-| Applying Filter Methods | H | 3hrs| - | - |
-| Organizing Data Filter Specific | M | 3hrs| - | - |
-| Basic CSS Styling | H | 2hrs| - | - |
-| Flexbox and Content Placement | M | 4hrs| - | - |
-| Video Banner | L | 3hrs| - | - |
-| Responsive Design | M | 3hrs| - | - |
-| Streamlining Code | L | 3hrs| - | - |
-| Total | H | 35hrs| - | - |
+| HTML Skeleton | H | 3hrs| 1hr | 1hr |
+| Incorporating Exoplanet API | H | 4hrs| 3hrs | 3hrs |
+| Simplifying and Limiting Data  | H | 4hrs| 2hrs | 2hrs |
+| Button Interaction | M | 3hrs| 1hr | 1hr |
+| Applying Filter Methods | H | 3hrs| 3hrs | 3hrs |
+| Organizing Data Filter Specific | M | 3hrs| 2hrs | 2hrs |
+| Basic CSS Styling | H | 2hrs| 1hr | 1hr |
+| Flexbox and Content Placement | M | 4hrs| 3hrs | 3hrs |
+| Video Banner | L | 3hrs| 2hrs | 2hrs |
+| Responsive Design | M | 3hrs| 2hrs | 2hrs |
+| Streamlining Code | L | 3hrs| 1hr | 1hr |
+| Total | H | 35hrs| 21hrs | 21hrs |
 
 ## Code Snippet
 
