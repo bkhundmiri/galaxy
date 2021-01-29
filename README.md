@@ -29,8 +29,9 @@ Some functionality features in this project and future additions.
 #### PostMVP  
 
 - Uses navigational data points
-- Interactable 'Image of the Day' section
-- Secondary API for 'Image of the Day'  
+- Functional Search Bar
+- 2 other API calls for each filter button
+- Search planets by planet name
 
 ## Project Schedule
 
@@ -71,11 +72,7 @@ Estimated and actual time spent developing and finalizing Galaxy
 
 Below is an example of functional code using JavaScript
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+
 
 ## Change Log
 -
