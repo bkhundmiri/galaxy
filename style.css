@@ -1,3 +1,57 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Nav Bar */
+
+
+#navBar {
+    width: 100%;
+    background-color: #B5B8CF;
+    z-index: 11;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.4s;
+}
+
+#navBar a {
+    padding: 15px 10px 15px 12px;
+    font-size: 22px;
+    color: #1D1F2C;
+    text-decoration: none;
+}
+
+.logo {
+    padding: 15px 10px 15px 12px;
+    border-right: 2px #1D1F2C solid;
+}
+
+.navLinks {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+}
+
+.navLinks a {
+    padding: 15px 10px 15px 12px;
+}
+
+.introLink {
+    border-right: 2px #1D1F2C solid;
+
+}
+
+#navBar a:hover {
+    background-color: #1D1F2C;
+    color: #B5B8CF;
+}
+
 
 /* BANNER */
 
@@ -55,7 +109,7 @@
 /* ABOUT ME */
 
 
-.aboutMe {
+#aboutMe {
     height: 25vh;
     color: #1D1F2C;
     background-color: #554A59;
@@ -69,17 +123,17 @@
     align-items: center;
 }
 
-.aboutMe h2, p {
+#aboutMe h2, #aboutMe p {
     color: white;
 }
 
-.aboutMe h2 {
+#aboutMe h2 {
     font-size: 40px;
     font-family: 'Syne', sans-serif;
 
 }
 
-.aboutMe p {
+#aboutMe p {
     font-size: 25px;
     font-family: 'Bitter', serif;
     margin: 0 200px 0 200px;
@@ -88,7 +142,7 @@
 /* FILTER CONTIANER */
 
 
-.filterFeatures {
+#filterFeatures {
     background-color: #1D1F2C;
     display: flex;
     justify-content: space-between;
@@ -135,7 +189,7 @@
 
 
 
-.dataBox {
+#dataBox {
     overflow-y: scroll;
     background-color: #BE9E87;
     display: flex;
@@ -143,7 +197,7 @@
     
 }
 
-.databox thead, th {
+#dataBox thead, #dataBox th {
     position: sticky;
     top: 0;
 }
@@ -161,7 +215,7 @@ table {
 
 th, td {
     padding: 8px 16px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     
 }
 
@@ -213,15 +267,15 @@ footer {
         font-size: 40px;
     }
 
-    .aboutMe {
+    #aboutMe {
         padding: 20px 30px;
     }
 
-    .aboutMe h2 {
+    #aboutMe h2 {
         font-size: 28px;
     }
 
-    .aboutMe p {
+    #aboutMe p {
         font-size: 20px;
         margin: 0 25px 0 25px;
     }
@@ -236,14 +290,14 @@ footer {
         font-size: 40px;
     }
 
-    .aboutMe {
+    #aboutMe {
         padding: 20px 30px;
     }
 
-    .aboutMe h2 {
+    #aboutMe h2 {
         font-size: 23px;
     }
-    .aboutMe p {
+    #aboutMe p {
         font-size: 18px;
         margin: 0 25px 0 25px;
     }
@@ -258,15 +312,15 @@ footer {
         font-size: 25px;
     }
 
-    .aboutMe {
+    #aboutMe {
         padding: 10px 20px;
     }
 
-    .aboutMe h2 {
+    #aboutMe h2 {
         font-size: 20px;
     }
 
-    .aboutMe p {
+    #aboutMe p {
         font-size: 15px;
         margin: 0 20px 0 20px;
     }
@@ -281,15 +335,15 @@ footer {
         font-size: 25px;
     }
 
-    .aboutMe {
+    #aboutMe {
         padding: 7px 15px;
     }
 
-    .aboutMe h2 {
+    #aboutMe h2 {
         font-size: 15px;
     }
 
-    .aboutMe p {
+    #aboutMe p {
         font-size: 10px;
         margin: 0 15px 0 15px;
     }
@@ -308,16 +362,16 @@ footer {
         font-size: 25px;
     }
 
-    .aboutMe {
+    #aboutMe {
         padding: 5px 10px;
     }
 
-    .aboutMe h2 {
+    #aboutMe h2 {
         font-size: 13px;
         margin: 10px;
     }
 
-    .aboutMe p {
+    #aboutMe p {
         font-size: 10px;
         margin: 0 10px 0 10px;
     }
@@ -350,11 +404,11 @@ footer {
         font-size: 20px;
     }
     
-    .aboutMe h2{
+    #aboutMe h2{
         font-size: 12px;
     }
 
-    .aboutMe p {
+    #aboutMe p {
         font-size: 9px;
     }
 

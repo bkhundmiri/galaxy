@@ -21,7 +21,18 @@
 </head>
 <body>
     <header>
+        <div id="navBar">
 
+            <div class="logo">
+                <a href="#banner">GALAXY</a>
+            </div>
+
+            <div class="navLinks">
+                <a class="introLink" href="#aboutMe">Intro</a>
+                <a href="#filterFeatures">Data</a>
+            </div>
+           
+        </div>
     </header>
     <main>
 
@@ -35,14 +46,14 @@
             </div>
         </div>
 
-        <div class="aboutMe">
+        <div id="aboutMe">
             <h2>Ever wondered what's beyond the scope of our immediate solar system?</h2>
             <p>This site incorporates information from NASA's KEPLER project to provide you an informative look on all planetary objects confirmed by the Kepler Sattelite throughout its career. Kepler, initially released into orbit to search for Earth-like planets living within the habitable zone of other Sun-like stars, found an approximate of 2,394 confirmed planets, with another 2,366 candidates yet to be confirmed. Below lies a list of roughly 9,000 Kepler Object(s) of Interest (KOI) discovered and tracked to date.</p>
         </div>
 
         
 
-        <div class="filterFeatures">
+        <div id="filterFeatures">
             <div class="filterButtons">
                 <p class="filter earth">Filter by 'Most Similar to Earth'</p>
                 <p class="filter habitable">Filter by "In Habitable Zone"</p>
@@ -53,7 +64,7 @@
 
 
        
-        <div class="dataBox">
+        <div id="dataBox">
             <div class="tableBox">
                 <table  id="dataTable" style="width: 100%;">
                     <thead>
@@ -65,8 +76,8 @@
                             <th class="criteria koi_insol">Earth Flux<br><span class="tableDesc">(Earth temp)</span></th>
                             <th class="criteria koi_prad">Planet Radius<br><span class="tableDesc">(Earth radii)</span></th>
                             <th class="criteria koi_steff">Temp of Host<br><span class="tableDesc">(K)</span></th>
-                            <th class="criteria confirmation">NASA Confirmation</th>
-                            <th class="criteria confirmation">KEPLER Confirmation</th>
+                            <th class="criteria pconfirmation">NASA Confirmation</th>
+                            <th class="criteria kconfirmation">KEPLER Confirmation</th>
                         </tr>
                     </thead>
                     <tbody>

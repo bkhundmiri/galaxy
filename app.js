@@ -1,3 +1,15 @@
+// Nav Bar Disappear
+
+let scrollPos = window.pageYOffset
+window.onscroll = function () {
+    let newScrollPos = window.pageYOffset
+    if (scrollPos > newScrollPos) {
+        document.getElementById('navBar').style.top = '0'
+    } else {
+        document.getElementById('navBar').style.top = '-80px'
+    }
+    scrollPos = newScrollPos
+}
 
 
 // Display Data Call 1
@@ -125,3 +137,4 @@ function searchPlanets () {
         }   
     } 
 }
+
