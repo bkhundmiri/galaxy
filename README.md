@@ -37,11 +37,11 @@ Some functionality features in this project and future additions.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 25-26| Project Write-up and Pitch | Incomplete
-|Jan 26| Project Pitch Submission/Approval | Incomplete
-|Jan 27| Architecture and Skeleton work | Incomplete
-|Jan 28| Api Incorporation and Interaction Support  | Incomplete
-|Jan 29| Base Project Completion | Incomplete
+|Jan 25-26| Project Write-up and Pitch | Complete
+|Jan 26| Project Pitch Submission/Approval | Complete
+|Jan 27| Architecture and Skeleton work | Complete
+|Jan 28| Api Incorporation and Interaction Support  | Complete
+|Jan 29| Base Project Completion | Complete
 |Feb 1| Project Presentation | Incomplete
 
 ## Priority Matrix
